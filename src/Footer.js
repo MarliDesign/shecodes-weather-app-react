@@ -5,7 +5,7 @@ export default function Footer() {
     <div>
       <p>
         <a href="https://github.com/MarliDesign/shecodes-weather-app-react">
-          open source code
+          open source code{" "}
         </a>
         by Linda
       </p>
