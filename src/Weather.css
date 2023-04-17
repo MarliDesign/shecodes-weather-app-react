@@ -1,3 +1,22 @@
 .Weather {
-  border: 1px solid grey;
+  border: 1.5px solid grey;
+  padding: 20px;
+  margin: 20px auto;
+  font-family: "Roboto", sans-serif;
+  border-radius: 4px;
+  color: slategrey;
+}
+
+.Weather h1 {
+  margin: 20px 0 10px 0;
+  line-height: 29px;
+}
+
+.Weather ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.Weather li {
+  list-style: none;
 }

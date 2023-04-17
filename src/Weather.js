@@ -4,6 +4,25 @@ import "./Weather.css";
 export default function Weather() {
   return (
     <div className="Weather">
+      <form>
+        <div className="row">
+          <div className="col-9">
+            <input
+              type="search"
+              className="form-control"
+              placeholder="enter a city"
+              autoFocus={true}
+            />
+          </div>
+          <div className="col-3">
+            <input
+              type="submit"
+              value="Search"
+              className="btn btn-primary w-100"
+            />
+          </div>
+        </div>
+      </form>
       <h1>Lisbon</h1>
       <ul>
         <li>Wednesday 7:00</li>
