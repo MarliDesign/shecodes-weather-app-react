@@ -4,14 +4,13 @@ import WeatherIcon from "./WeatherIcon";
 import axios from "axios";
 
 export default function WeatherForecast(props) {
-  function handleResponse(response) {
-    console.log(response.data);
-  }
+  function handleResponse(response) {}
+  console.log(props);
 
   let apiKey = "ebef9ca4a8de66ed586fac628fade056";
-  let latitude = props.cooridnates.lat;
   let longitude = props.coordinates.lon;
-  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+  let latitude = props.cooridnates.lat;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(handleResponse);
   return (
@@ -27,7 +26,7 @@ export default function WeatherForecast(props) {
           </div>
           <div className="WeatherForecast-temperatures">
             <span className="WeatherForecast-temperature-max">19°</span>
-            <span ClassName="WeatherForecast-temperature-min">10°</span>
+            <span className="WeatherForecast-temperature-min">10°</span>
           </div>
         </div>
       </div>
